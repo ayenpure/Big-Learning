@@ -83,7 +83,7 @@ Deep learning encapsulates methods of machine learning which uses multiple layer
 to extract features from data.
 %
 Each of these layers progressively extracts higher level features.
-i%
+%
 This broad class of methods include deep neural networks, deep belief networks,
 convolutional neural networks, and recurrent neural networks.
 %
@@ -105,7 +105,69 @@ For the scope of this report I have choosen to summerize the following works.
 
 \section{Big Data Deep Learning: Challenges and Perspectives}
 \subsection{Premise}
+This work focuses on explaining how Deep Learning and Big Data are tied together
+in various problems.
+%
+The elucidate the fact by explaining how data processing techniques from Big Data
+may be used to improve the exexution efficiency of various Deep Learning mathods.
+%
+They focused majority of their efforts on Deep Belief Networks (DBNs), and Convolutional
+Neural Networks (CNNs).
+
 \subsection{Synthesis}
+The authors explain ways in which Deep Learning Frameworks can be extended to use
+modern hardware accelerators like GPUs to process data efficiently.
+%
+The inherant architecture of the GPUs make it very easy to model deep learning
+algorithms for parallel execution.
+%
+GPUs allow for thousands of cores which allows convolutional operations to finish
+much faster.
+%
+For making Deep Learning methods more suitable for big data processing the authors
+present the following solutions:
+\begin{itemize}
+\item Large scale Deep Belief Networks
+\item Large scale Convolutional Neural Networks
+\item Combining Data- and Model-Parallel Schemes
+\end{itemize}
+Apart from proposing these solutions, the authors make readers explicitly aware of
+challanges to look out for and explain their position on these challanges of applying
+deep learning to big data, namely:
+\begin{itemize}
+\item Deep Learning for large volumes of data:
+%
+The authors believe that using GPU and CPU clusters is a good approach but using
+data and model parallelism.
+%
+Inherent to deep learning is the challange of large number of parameters, and data
+and model parallelism makes it easier to deal with such problems.
+%
+They also mention about the problems associated with large data which include
+incomplete or noisy data.
+%
+\item Deep Learning for high variety of data
+%
+The authors mention about the problems of combining knowledge from various data
+sources.
+%
+This could be done using data-integration.
+%
+They authors also survey recent works that demonstrate data integration in this
+section.
+%
+\item Deep Learning for high velocity of data
+%
+To deal with this problem the authors discuss online learning.
+%
+This makes the model learn from one instance of data at a time.
+%
+Another challange of such data is the non-stationary nature.
+%
+The authors describe how data streaming may be able to help in this case.
+\end{itemize}
+
+
 
 \section{DeepWalk: Online Learning of Social Representations}
 \subsection{Premise}
